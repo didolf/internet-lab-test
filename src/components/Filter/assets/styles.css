@@ -1,0 +1,35 @@
+.Filter
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.FilterItem
+{
+    font-size: 13px;
+    line-height: 16px;
+
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 13px;
+
+    text-align: center;
+    letter-spacing: .155em;
+    text-transform: uppercase;
+
+    color: #888;
+    border: 1px solid #888;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.FilterItem_current
+{
+    transition: .3s background ease-in-out;
+
+    color: #fff;
+    border: 1px solid #ff3754;
+    background: #ff3754;
+}

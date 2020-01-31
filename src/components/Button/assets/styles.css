@@ -1,0 +1,47 @@
+.Button
+{
+    font-family: 'Museo Sans Cyrl 700';
+    font-size: 19px;
+    line-height: 23px;
+
+    box-sizing: border-box;
+    padding: 20px 40px;
+
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: .155em;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+}
+
+.Button_type_red
+{
+    color: #fff;
+    border: 1px solid #ff3754;
+    background: #ff3754;
+}
+
+.Button_type_grey
+{
+    padding: 13px 40px;
+
+    color: #888;
+    border: 1px solid #888;
+    background: #fff;
+}
+
+@media (max-width: 1050px)
+{
+    .Button
+    {
+        font-size: 16px;
+        line-height: 19px;
+
+        padding: 30px;
+    }
+    .Button_type_grey
+    {
+        padding: 13px 40px;
+    }
+}

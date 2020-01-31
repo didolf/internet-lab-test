@@ -1,0 +1,57 @@
+.List
+{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.ListItem
+{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.ListItem-Dot
+{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.ListItem-Dot_default
+{
+    width: 10px;
+    height: 10px;
+
+    border-radius: 3px;
+    background: #ff3754;
+}
+
+.List_size_m .ListItem-Dot
+{
+    margin-right: 29px;
+}
+
+.List_size_m .ListItem:not(:last-child)
+{
+    margin-bottom: 19px;
+}
+
+.List_size_l .ListItem:not(:last-child)
+{
+    margin-bottom: 23px;
+}
+
+.List_size_l .ListItem-Dot
+{
+    margin-right: 52px;
+}
+
+@media (max-width: 1050px)
+{
+    .List_size_l .ListItem-Dot
+    {
+        max-width: 70px;
+        margin-right: 13px;
+    }
+}

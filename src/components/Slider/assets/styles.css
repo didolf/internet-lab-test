@@ -1,0 +1,62 @@
+
+
+.Slider-Content
+{
+    overflow-x: hidden;
+}
+
+.Slider-ContentWrap
+{
+    display: flex;
+    flex-flow: row nowrap;
+
+    transition: .5s transform ease-in-out;
+}
+
+.Slider-ContentItem
+{
+    width: 100%;
+}
+
+.Slider-Control
+{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.Slider-LeftControl,
+.Slider-RightContol
+{
+    cursor: pointer;
+
+    color: #888;
+}
+
+.Slider-LeftControl:hover,
+.Slider-RightContol:hover
+{
+    color: #ff3754;
+}
+
+.Slider-ControlText
+{
+    font-family: 'Museo Sans Cyrl 700';
+    font-size: 24px;
+    line-height: 29px;
+
+    margin: 0 36px;
+
+    text-align: center;
+
+    color: #303030;
+}
+
+@media (max-width: 1050px)
+{
+    .Slider-Control
+    {
+        margin-top: 20px;
+    }
+}

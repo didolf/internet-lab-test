@@ -1,0 +1,13 @@
+.TextDecoration_red
+{
+    color: #ff3754;
+}
+
+.TextDecoration_red-background
+{
+    padding: 4px 8px;
+
+    color: #fff;
+    border-radius: 4px;
+    background: #ff3754;
+}

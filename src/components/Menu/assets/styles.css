@@ -1,0 +1,164 @@
+.Menu
+{
+    display: flex;
+    align-items: center;
+}
+
+.Menu_expanded .Menu-Overlay
+{
+    display: flex;
+}
+
+.Menu_expanded .Menu-Items
+{
+    display: block;
+}
+
+.Menu-Contacts
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.Menu_light .Menu-Phone
+{
+    color: #fff;
+}
+
+.Menu_light .Menu-ActionIcon
+{
+    color: #fff;
+}
+
+.Menu_dark .Menu-Phone
+{
+    color: #303030;
+}
+
+.Menu_dark .Menu-ActionIcon
+{
+    color: #303030;
+}
+
+.Menu-Phone
+{
+    font-family: 'Museo Sans Cyrl 700';
+
+    display: flex;
+    align-items: center;
+
+    margin-right: 42px;
+
+    text-align: right;
+}
+
+.Menu-PhoneIcon
+{
+    margin-right: 19px;
+}
+
+.Menu-InstagramIcon
+{
+    margin-right: 28px;
+}
+
+.Menu-VkIcon
+{
+    margin-right: 62px;
+}
+
+.Menu-Overlay
+{
+    position: fixed;
+    top: 110px;
+    left: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: calc(100% - 110px);
+
+    background: rgba(255, 255, 255, .9);
+
+    backdrop-filter: blur(50px);
+}
+
+.Menu-Items
+{
+    display: none;
+
+    margin: auto;
+}
+
+.Menu-ActionIcon
+{
+    width: 50px;
+
+    cursor: pointer;
+}
+
+.Menu-SocialIcons
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+@media (max-width: 1050px)
+{
+    .Menu-Contacts
+    {
+        position: fixed;
+        top: 110px;
+        left: 0;
+
+        display: none;
+        align-items: center;
+        flex-flow: column nowrap;
+
+        width: 100%;
+        height: calc(100% - 110px);
+        padding-top: 25px;
+
+        background: rgba(255, 255, 255, .9);
+
+        backdrop-filter: blur(50px);
+    }
+    .Menu_expanded .Menu-Contacts
+    {
+        display: flex;
+    }
+    .Menu-Overlay
+    {
+        position: static;
+
+        display: flex;
+
+        width: unset;
+        height: unset;
+
+        background: none;
+
+        backdrop-filter: none;
+    }
+    .Menu-Items
+    {
+        display: block;
+
+        margin-top: 25px;
+    }
+    .Menu-VkIcon
+    {
+        margin-right: 0;
+    }
+    .Menu-Phone
+    {
+        margin-right: 0;
+    }
+    .Menu-SocialIcons
+    {
+        margin-top: 70px;
+    }
+}

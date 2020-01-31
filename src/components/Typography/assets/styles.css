@@ -1,0 +1,110 @@
+.Typography_regular
+{
+    font-size: 18px;
+}
+
+.Typography_bold
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Typography_center
+{
+    text-align: center;
+}
+
+.Typography_h1
+{
+    font-family: 'Bebas Neue';
+    font-size: 90px;
+    line-height: 90px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.Typography_h2
+{
+    font-family: 'Bebas Neue';
+    font-size: 70px;
+    line-height: 70px;
+
+    text-transform: uppercase;
+
+    color: #ff3754;
+}
+
+.Typography_h3
+{
+    font-family: Bebas Neue;
+    font-size: 40px;
+    line-height: 40px;
+
+    text-transform: uppercase;
+
+    color: #888;
+}
+
+.Typography_caption
+{
+    font-family: 'Museo Sans Cyrl 300';
+    font-size: 13px;
+    line-height: 16px;
+
+    letter-spacing: .155em;
+    text-transform: uppercase;
+
+    color: #303030;
+}
+
+.Typography_headline
+{
+    font-family: 'Museo Sans Cyrl 700';
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.Typography_title
+{
+    font-family: 'Museo Sans Cyrl 700';
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.Typography_big-title
+{
+    font-family: 'Museo Sans Cyrl 700';
+    font-size: 24px;
+    line-height: 29px;
+}
+
+@media (max-width: 1050px)
+{
+    .Typography_h1
+    {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .Typography_h2
+    {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .Typography_headline
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .Typography_title
+    {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .Typography_big-title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

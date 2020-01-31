@@ -1,0 +1,20 @@
+.Footer
+{
+    font-size: 18px;
+    line-height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+
+    background-color: #fff;
+}
+
+.Footer-Logo
+{
+    margin-top: 10px;
+
+    transform: rotate(60deg);
+}

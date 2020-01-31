@@ -1,38 +1,300 @@
-.App {
-  text-align: center;
+.App-Header
+{
+    height: 110px;
+    padding: 25px 95px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-Footer
+{
+    padding: 25px 95px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-FirstBlock
+{
+    padding: 170px 95px 60px 95px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App-ThirdBlock
+{
+    padding: 69px 95px 120px 95px;
 }
 
-.App-link {
-  color: #61dafb;
+.FirstBlock
+{
+    display: flex;
+    flex-flow: column nowrap;
+
+    background: url('/first-block-background.jpeg') no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.FirstBlock-Title
+{
+    margin-bottom: 10px;
+}
+
+.FirstBlock-Description
+{
+    margin-bottom: 60px;
+
+    color: #fff;
+}
+
+.FirstBlock-List
+{
+    margin-bottom: 120px;
+
+    color: #fff;
+}
+
+.FirstBlock-ActionButton
+{
+    width: 412px;
+}
+
+.Person
+{
+    position: relative;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    padding: 30px 150px;
+}
+
+.Person-LeftBorder
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    width: 60px;
+    height: 100%;
+
+    border-top: 30px solid #ff3754;
+    border-bottom: 30px solid #ff3754;
+    border-left: 30px solid #ff3754;
+}
+
+.Person-RightBorder
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    box-sizing: border-box;
+    width: 60px;
+    height: 100%;
+
+    border-top: 30px solid #ff3754;
+    border-right: 30px solid #ff3754;
+    border-bottom: 30px solid #ff3754;
+}
+
+.Person-Info
+{
+    width: 55%;
+}
+
+.Person-Photo
+{
+    width: 35%;
+}
+
+.Person-Photo
+{
+    padding: 0 5% 5%;
+}
+
+.Person-PhotoImg
+{
+    max-width: 100%;
+
+    border-radius: 50%;
+}
+
+.Person-Tagline
+{
+    margin-top: 20px;
+}
+
+.Person-Advantages
+{
+    margin-top: 40px;
+}
+
+.ThirdBlock
+{
+    background: linear-gradient(180deg, #fdf4f4 0%, #ecf3ec 100%);
+}
+
+.ThirdBlock-Title
+{
+    margin-bottom: 60px;
+}
+
+.ThirdBlock-Filter[class]
+{
+    display: none;
+}
+
+.Cards
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.Cards-Card
+{
+    width: 20%;
+}
+
+.Cards-Card:not(:nth-child(4n))
+{
+    margin-right: calc(20% / 3);
+}
+
+.Cards-Card:nth-child(n+5)
+{
+    margin-top: 56px;
+}
+
+.App-SecondBlock
+{
+    margin-bottom: 90px;
+    padding: 0 95px;
+}
+
+.SecondBlock-Title
+{
+    margin-top: 88px;
+    margin-bottom: 60px;
+}
+
+.Person-HideAdvantages
+{
+    display: none;
+}
+
+@media (max-width: 1050px)
+{
+    .App-Header
+    {
+        height: 110px;
+        padding: 25px 15px;
+    }
+    .App-Footer
+    {
+        padding: 25px 15px;
+    }
+    .App-FirstBlock
+    {
+        padding: 140px 15px 30px 15px;
+
+        background-size: 100% 300px;
+    }
+    .App-ThirdBlock
+    {
+        padding: 69px 15px 120px 15px;
+    }
+    .FirstBlock-ActionButton
+    {
+        width: 100%;
+        margin-bottom: 28px;
+    }
+    .Cards
+    {
+        flex-flow: column nowrap;
+    }
+    .Cards-Card
+    {
+        width: 100%;
+    }
+    .FirstBlock-List
+    {
+        order: 4;
+
+        margin-bottom: 0;
+    }
+    .App-SecondBlock
+    {
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+    .SecondBlock-Title
+    {
+        margin-top: 28px;
+        margin-bottom: 20px;
+    }
+    .Person
+    {
+        flex-flow: column nowrap;
+
+        padding: 0;
+    }
+    .Person-RightBorder,
+    .Person-LeftBorder
+    {
+        display: none;
+    }
+    .Person-Info
+    {
+        width: 100%;
+    }
+    .Person-Photo
+    {
+        order: -1;
+
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5% 10%;
+    }
+    .Person-ContactInfo
+    {
+        text-align: center;
+    }
+    .Person-Advantages
+    {
+        margin-bottom: 50px;
+    }
+    .Cards-Card:not(:nth-child(4n))
+    {
+        margin-right: none;
+    }
+    .Cards-Card:nth-child(n+5)
+    {
+        margin-top: none;
+    }
+    .Cards-Card
+    {
+        margin-top: 25px;
+    }
+    .FirstBlock-List
+    {
+        color: #303030;
+    }
+    .FirstBlock-Title
+    {
+        min-height: 100px;
+    }
+    .Person-HideAdvantages
+    {
+        display: block;
+
+        width: 156px;
+        margin: 10px auto;
+    }
+    .ThirdBlock-Filter[class]
+    {
+        display: flex;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .App-FirstBlock
+    {
+        background-size: auto 300px;
+    }
 }

@@ -1,0 +1,34 @@
+.Card
+{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.Card-Photo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+}
+
+.Card-PhotoImg
+{
+    max-width: 100%;
+}
+
+.Card-Title
+{
+    line-height: 160%;
+
+    margin-top: 26px;
+}
+
+.Card-Description
+{
+    line-height: 160%;
+
+    margin-top: 10px;
+}
